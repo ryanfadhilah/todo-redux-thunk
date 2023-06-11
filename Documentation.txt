@@ -1,0 +1,26 @@
+:::::: Redux
+Components(Include API Call / Action Creator) > Action Object > Reducer > Store > Components
+
+
+// 9:28
+
+:::::: Redux-Thunk
+Components  ->                >            > Action Object > Reducer > Store > Components
+            -> Action Creator > Middleware > Action Object > Reducer > Store > Components
+
+ to make the aysnc process, can be exist inside Action Creator
+"currently on Components (TodoPage.jsx)"
+set it up at index.jsx
+import ApplyMiddleware from redux
+import ReduxThunk from redux - thunk
+const store = createStore(rootReducer, applyMiddleware(ReduxThunk))
+
+
+:::::: Redux-Thunk Logic
+const thunk = store => {
+    return next => {
+        return action => {
+
+        }
+    }
+}
