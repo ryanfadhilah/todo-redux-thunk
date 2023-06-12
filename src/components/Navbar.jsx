@@ -1,13 +1,15 @@
 import React from "react";
 import { connect } from "react-redux"
+import './Navbar.css'
 
 class Navbar extends React.Component {
     render() {
         return (
-            <>
-                <h1>React Todo List</h1>
-                <h1>You have {this.props.todoGlobalState.todoCount} todo Item</h1>
-            </>)
+            <div className="navbar">
+                <h1>React : Redux : Redux-Thunk</h1>
+                <h1>You have <span>{this.props.todoGlobalState.todoCount}</span> todo Item</h1>
+            </div>
+        )
     }
 }
 

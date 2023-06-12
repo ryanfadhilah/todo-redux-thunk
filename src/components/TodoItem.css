@@ -1,0 +1,61 @@
+.todo-item-list {
+    /* background-color: antiquewhite; */
+    display: grid;
+    grid-template-columns: 20rem 20rem;
+
+    height: 2.5rem;
+
+    margin-bottom: .8rem;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px;
+    transition: all ease-in-out .15s;
+}
+
+.todo-item-list:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+
+}
+
+.todo-items-result {
+    display: flex;
+    align-items: center;
+    padding-left: 1.2rem;
+}
+
+.todo-items-button {
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+}
+
+.completed {
+    /* background-color: #F7E1AE; */
+    border: transparent;
+    font-weight: bold;
+    color: green;
+
+}
+
+.deleted {
+    border: transparent;
+    font-weight: bold;
+    color: red;
+}
+
+.completed,
+.deleted {
+    background-color: rgba(211, 211, 211, 0.149);
+    transition: all ease-in-out .15s;
+}
+
+.completed:hover,
+.deleted:hover {
+    /* background-color: rgba(0, 0, 0, 0.199); */
+    background-color: rgba(255, 166, 0, 0.567);
+}
+
+.done {
+    color: rgba(0, 128, 0, 0.181);
+    text-decoration-line: line-through
+}

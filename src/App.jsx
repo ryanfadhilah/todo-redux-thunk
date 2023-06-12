@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import TodoPage from "./pages/TodoPage"
 import Navbar from "./components/Navbar"
+import './App.css'
 // import Items from './components/Items';
 
 class App extends React.Component {

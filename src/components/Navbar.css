@@ -1,0 +1,14 @@
+.navbar {
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 5%;
+
+    color: white;
+    background-color: rgba(255, 166, 0, 0.825);
+}
+
+.navbar>h1>span {
+    color: rgb(122, 122, 122);
+}

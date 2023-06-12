@@ -7,7 +7,8 @@
     },
     {
       "activity": "Sleep",
-      "id": 2
+      "id": 2,
+      "done": true
     },
     {
       "activity": "Code",
@@ -24,10 +25,6 @@
     {
       "activity": "test",
       "id": 6
-    },
-    {
-      "activity": "",
-      "id": 7
     },
     {
       "activity": "dw",
@@ -75,11 +72,6 @@
       "id": 16
     },
     {
-      "activity": "444",
-      "done": false,
-      "id": 17
-    },
-    {
       "activity": "wawa",
       "done": false,
       "id": 18
@@ -111,23 +103,13 @@
     },
     {
       "activity": "redux thunk",
-      "done": false,
+      "done": true,
       "id": 24
     },
     {
       "activity": "test redux thunk",
       "done": false,
       "id": 25
-    },
-    {
-      "activity": "r",
-      "done": false,
-      "id": 26
-    },
-    {
-      "activity": "r",
-      "done": false,
-      "id": 27
     },
     {
       "activity": "why error",
@@ -150,14 +132,24 @@
       "id": 31
     },
     {
-      "activity": "p",
-      "done": false,
-      "id": 32
-    },
-    {
       "activity": "test",
       "done": false,
       "id": 33
+    },
+    {
+      "activity": "asd",
+      "done": false,
+      "id": 38
+    },
+    {
+      "activity": "WORKS",
+      "done": false,
+      "id": 39
+    },
+    {
+      "activity": "err delete completed",
+      "done": false,
+      "id": 40
     }
   ]
 }

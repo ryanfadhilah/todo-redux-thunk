@@ -1,3 +1,4 @@
+import './TodoPage.css'
 import React from 'react';
 import TodoItem from "../components/TodoItem"
 import Axios from 'axios'
@@ -31,7 +32,10 @@ class TodoPage extends React.Component {
     deleteTodo = (id) => {
         Axios.delete(`http://localhost:2000/todo/${id}`)
             .then(() => {
-                this.fetchTodo()
+                this.fetchTodoGlobal()
+            })
+            .catch(() => {
+                alert(`error: delete todo`)
             })
     }
 
@@ -89,25 +93,26 @@ class TodoPage extends React.Component {
     render() {
 
         return (
-            <div className="App" >
+            < >
+                <div className='todo-page'>
+                    {/* title */}
+                    <h1>Things to do : {this.props.todoGlobalState.todoCount}</h1>
 
-                {/* title */}
-                <h3>Things to do : {this.props.todoGlobalState.todoCount}</h3>
-
-                {/* input */}
-                <form action="">
-                    <input type="text" onChange={this.inputEvent} placeholder='' />
-                    <input type="submit" onClick={this.addTodo} value="Submit" />
-                    {/* <input type="button" onClick={this.fetchTodo} value='refresh' /> */}
-                    <span onClick={this.props.incrementTodo}>click me to increment</span>
-                </form>
+                    {/* input */}
+                    <form action="">
+                        <input type="text" onChange={this.inputEvent} placeholder='' />
+                        <input className='submit' type="submit" onClick={this.addTodo} value="Submit" />
+                        {/* <input type="button" onClick={this.fetchTodo} value='refresh' /> */}
+                        {/* <span onClick={this.props.incrementTodo}>click me to increment</span> */}
+                    </form>
+                </div>
 
                 {/* output */}
                 <ul>
                     {this.renderTodoList()}
                 </ul>
 
-            </div>
+            </>
         );
     }
 }
